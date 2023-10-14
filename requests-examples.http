@@ -1,0 +1,27 @@
+# примеры API-запросов
+
+@baseUrl = http://localhost:7070/
+
+
+# создание тикета
+POST {{baseUrl}}/?method=createTicket
+Content-Type: application/json
+
+{
+  "name": "Самые сочные и ароматные помидорки",
+  "description": "Самые сочные и ароматные помидорки",
+}
+
+###
+
+# получение всех тикетов
+GET {{baseUrl}}/?method=allTickets
+Content-Type: application/json
+
+###
+
+# получение тикета по ID
+GET {{baseUrl}}/?method=ticketById&id=1
+Content-Type: application/json
+
+###

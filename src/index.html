@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="add-ticket btn" type="button">Добавить тикет</button>
+
+      <div class="tickets-container"></div>
+
+      <form class="add-edit-ticket popup">
+        <span class="form-title">Добавить тикет</span>
+        <label class="form-label" for="name">Краткое описание</label>
+        <input class="form-input" type="text" name="name" />
+        <label class="form-label" for="description">Подробное описание</label>
+        <textarea
+          class="form-input"
+          name="description"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="form-actions">
+          <button class="form-reset btn" type="reset">Отмена</button>
+          <button class="form-add btn" type="submit">Ок</button>
+        </div>
+      </form>
+      <form class="delete-ticket popup">
+        <span class="form-title">Удалить тикет</span>
+        <p>Вы действительно хотите удалить тикет? Это действие необратимо.</p>
+        <div class="form-actions">
+          <button class="form-reset btn" type="reset">Отмена</button>
+          <button class="form-add btn" type="submit">Ок</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
